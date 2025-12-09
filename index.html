@@ -1,48 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de um DEsenvolvedor de Sistemas</title>
-    <link rel="stylesheet" href="style.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Pessoal</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-     <header>
-        <div class="logo">LOGO</div>
+<!-- Preloader -->
+<div id="preloader"></div>
 
-        <nav>
-            <ul>
-                <li class="menu-item" data-section="sobre">Sobre Mim</li>
-                <li class="menu-item" data-section="certificacoes">Certificações</li>
-                <li class="menu-item" data-section="projetos">Projetos</li>
-            </ul>
-        </nav>
-    </header>
+<!-- Scroll Top Button -->
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
 
-    <h1>Olá, me chamo:</h1>
-    <p>Gabriela Gomes Justiniano;</p>
+<!-- Header -->
+<header class="header">
+  <div class="profile-img">
+    <img src="WhatsApp Image.jpeg" alt="Foto do Perfil">
+  </div>
+  <div class="logo">
+    <h1>Meu Portfolio</h1>
+  </div>
+  <nav class="navmenu">
+    <ul>
+      <li><a href="#hero"><i class="fas fa-home navicon"></i>Home</a></li>
+      <li><a href="#about"><i class="fas fa-user navicon"></i>Sobre</a></li>
+      <li><a href="#portfolio"><i class="fas fa-briefcase navicon"></i>Portfolio</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope navicon"></i>Contato</a></li>
+    </ul>
+  </nav>
+  <div class="header-toggle"><i class="fas fa-bars"></i></div>
+</header>
 
-    <header>
-        <h2>Desenvolvimento de Sistemas</h2>
+<main>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Olá, Eu Sou a <span>Gabriela Gomes Justiniano</span></h2>
+      <p>Estudante de Desenvolvimento de Sistemas</p>
+      <div class="hero-social-icons">
+        <a href="mailto:ggabrielagomes09@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5511917707875" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/g.gomeszzx_" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
 
-        <section id="conteudo">
-        <div id="sobre" class="secao ativa">
-            <h1>Sobre Mim</h1>
-            <p>Meu nome é Gabriela, tenho 16 anos e estou cursando Desenvolvimento de Sistemas. Durante este primeiro ano aprendendo programação, venho adquirindo conhecimentos importantes e construindo meus primeiros projetos. Gosto de desafios e estou sempre buscando evoluir na área de TI.”</p>
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Sobre Mim</h2>
+        <p>Conheça um pouco sobre minha trajetória.</p>
+      </div>
+      <div class="content">
+        <p>Meu nome é Gabriela, tenho 16 anos e estou cursando Desenvolvimento de Sistemas. 
+           Durante meu primeiro ano aprendendo programação, venho adquirindo conhecimentos 
+           importantes e construindo meus primeiros projetos.  
+           Gosto de desafios e estou sempre buscando evoluir.</p>
+        <ul>
+          <li><i class="fas fa-check"></i> <strong>Experiência:</strong> 1 ano</li>
+          <li><i class="fas fa-check"></i> <strong>Localização:</strong> São Paulo, Brasil</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>Projetos recentes que desenvolvi.</p>
+        <p>Desde que comecei a estudar Desenvolvimento de Sistemas, venho me dedicando a aprender diferentes linguagens e tecnologias. Já participei de alguns cursos online, o que me permitiu criar meus primeiros projetos e experimentar diferentes áreas, como desenvolvimento web e design de interfaces. Estou sempre buscando novos desafios, aprendendo com cada projeto e aprimorando minhas habilidades a cada dia. Meu objetivo é crescer como desenvolvedora e construir soluções práticas e criativas</p>
+      </div>
+      <div class="portfolio-content">
+        <div class="portfolio-item">
+          <img src="imagem 1.jpg" alt="Projeto">
+          <div class="portfolio-info">
+            <h4>Projeto Web</h4>
+            <p>Website moderno</p>
+            <a href="#" class="preview-link"><i class="fas fa-eye"></i></a>
+          </div>
         </div>
-
-        <div id="certificacoes" class="secao">
-            <h1>Certificações</h1>
-            <p>Liste suas certificações aqui...</p>
+        <div class="portfolio-item">
+          <img src="imagem 2.jpg" alt="Projeto">
+          <div class="portfolio-info">
+            <h4>Projeto Design</h4>
+            <p>Design Criativo</p>
+            <a href="#" class="preview-link"><i class="fas fa-eye"></i></a>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div id="projetos" class="secao">
-            <h1>Projetos</h1>
-            <p>Adicione seus projetos com links ou imagens...</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo</p>
+      </div>
+      <div class="info-wrap">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Localização:</h3>
+          <p>SP Diadema, Brasil</p>
         </div>
-    </section>
-    
-    </header>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <h3>Email:</h3>
+          <p><a href="mailto:ggabrielagomes09@gmail.com">ggabrielagomes09@gmail.com</a></p>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp:</h3>
+          <p><a href="https://wa.me/5511917707875" target="_blank">Enviar mensagem</a></p>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-instagram"></i>
+          <h3>Instagram:</h3>
+          <p><a href="https://instagram.com/g.gomeszzx_" target="_blank">@g.gomeszzx_</a></p>
+        </div>
+      </div>
+      <form class="php-email-form">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="copyright">
+      <p>&copy; 2025 Gabriela Gomes. Todos os direitos reservados.</p>
+    </div>
+    <div class="credits">
+      Desenvolvido por Gabriela Gomes
+    </div>
+  </div>
+</footer>
+
+<!-- JS -->
+<script>
+  const scrollTop = document.querySelector('.scroll-top');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 300) scrollTop.classList.add('active');
+    else scrollTop.classList.remove('active');
+  });
+
+  window.addEventListener('load', () => {
+    document.getElementById('preloader').style.display = 'none';
+  });
+
+  const header = document.querySelector('.header');
+  const toggleBtn = document.querySelector('.header-toggle');
+  toggleBtn.addEventListener('click', () => {
+    header.classList.toggle('header-show');
+  });
+</script>
 </body>
 </html>
